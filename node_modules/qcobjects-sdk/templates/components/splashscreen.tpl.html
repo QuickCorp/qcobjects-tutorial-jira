@@ -1,0 +1,18 @@
+<style>
+  @import url('{{basePath}}css/components/splashscreen.css');
+  .splashscreen,
+  .fullscreen-bg {
+    background-image: url('{{background}}');
+  }
+
+</style>
+<div class="splashscreen">
+  <div class="fullscreen-bg splashcontent">
+    <video loop muted autoplay playsinline name="media" poster="{{background}}" class="fullscreen-bg__video" data-setup="{}" height="100%">
+      <source src="{{video_mp4}}" type="video/mp4">
+      <source src="{{video_ogg}}" type="video/ogg">
+      <source src="{{video_webm}}" type="video/webm">
+    </video>
+    <slot id="slot-logo" name="logo"></slot>
+  </div>
+</div>
