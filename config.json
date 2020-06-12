@@ -1,0 +1,10 @@
+{
+  "devmode": "debug",
+  "domain":"localhost",
+  "jira": {
+    "domain": "$ENV(JIRA_DOMAIN)",
+    "username": "$ENV(JIRA_USERNAME)",
+    "auth_token": "$ENV(JIRA_TOKEN)",
+    "project": "$ENV(JIRA_PROJECT)"
+  }
+}
